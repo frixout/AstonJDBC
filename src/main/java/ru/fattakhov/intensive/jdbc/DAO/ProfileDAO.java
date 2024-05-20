@@ -1,13 +1,11 @@
-package ru.fattakhov.intensive.jdbc.models.DAO;
+package ru.fattakhov.intensive.jdbc.DAO;
 
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
-import ru.fattakhov.intensive.jdbc.models.entity.Employee;
-import ru.fattakhov.intensive.jdbc.models.entity.Profile;
-import ru.fattakhov.intensive.jdbc.models.mapper.EmployeeRowMapper;
-import ru.fattakhov.intensive.jdbc.models.mapper.ProfileRowMapper;
+import ru.fattakhov.intensive.jdbc.models.Profile;
+import ru.fattakhov.intensive.jdbc.mapper.ProfileRowMapper;
 
 @Repository
 public class ProfileDAO {

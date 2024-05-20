@@ -1,8 +1,8 @@
 package ru.fattakhov.intensive.jdbc.controllers;
 
 import org.springframework.web.bind.annotation.*;
-import ru.fattakhov.intensive.jdbc.models.DAO.EmployeeDAO;
-import ru.fattakhov.intensive.jdbc.models.entity.Employee;
+import ru.fattakhov.intensive.jdbc.DAO.EmployeeDAO;
+import ru.fattakhov.intensive.jdbc.models.Employee;
 
 
 @RestController

@@ -1,9 +1,8 @@
 package ru.fattakhov.intensive.jdbc.controllers;
 
 import org.springframework.web.bind.annotation.*;
-import ru.fattakhov.intensive.jdbc.models.DAO.ProfileDAO;
-import ru.fattakhov.intensive.jdbc.models.entity.Employee;
-import ru.fattakhov.intensive.jdbc.models.entity.Profile;
+import ru.fattakhov.intensive.jdbc.DAO.ProfileDAO;
+import ru.fattakhov.intensive.jdbc.models.Profile;
 
 @RestController
 public class ProfileController {

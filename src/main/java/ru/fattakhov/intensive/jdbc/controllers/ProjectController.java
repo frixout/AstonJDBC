@@ -1,12 +1,8 @@
 package ru.fattakhov.intensive.jdbc.controllers;
 
 import org.springframework.web.bind.annotation.*;
-import ru.fattakhov.intensive.jdbc.models.DAO.EmployeeDAO;
-import ru.fattakhov.intensive.jdbc.models.DAO.ProjectDAO;
-import ru.fattakhov.intensive.jdbc.models.entity.Employee;
-import ru.fattakhov.intensive.jdbc.models.entity.Project;
-
-import java.sql.SQLException;
+import ru.fattakhov.intensive.jdbc.DAO.ProjectDAO;
+import ru.fattakhov.intensive.jdbc.models.Project;
 
 @RestController
 public class ProjectController {

@@ -1,4 +1,4 @@
-package ru.fattakhov.intensive.jdbc.models.entity;
+package ru.fattakhov.intensive.jdbc.models;
 
 import lombok.Data;
 

@@ -1,8 +1,8 @@
 package ru.fattakhov.intensive.jdbc.controllers;
 
 import org.springframework.web.bind.annotation.*;
-import ru.fattakhov.intensive.jdbc.models.DAO.RoleDAO;
-import ru.fattakhov.intensive.jdbc.models.entity.Role;
+import ru.fattakhov.intensive.jdbc.DAO.RoleDAO;
+import ru.fattakhov.intensive.jdbc.models.Role;
 
 @RestController
 public class RoleController {

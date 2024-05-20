@@ -1,8 +1,7 @@
-package ru.fattakhov.intensive.jdbc.models.mapper;
+package ru.fattakhov.intensive.jdbc.mapper;
 
 import org.springframework.jdbc.core.RowMapper;
-import ru.fattakhov.intensive.jdbc.models.entity.Employee;
-import ru.fattakhov.intensive.jdbc.models.entity.Profile;
+import ru.fattakhov.intensive.jdbc.models.Profile;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

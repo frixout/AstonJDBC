@@ -1,15 +1,11 @@
-package ru.fattakhov.intensive.jdbc.models.DAO;
+package ru.fattakhov.intensive.jdbc.DAO;
 
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
-import ru.fattakhov.intensive.jdbc.models.entity.Employee;
-import ru.fattakhov.intensive.jdbc.models.entity.Project;
-import ru.fattakhov.intensive.jdbc.models.mapper.EmployeeRowMapper;
-import ru.fattakhov.intensive.jdbc.models.mapper.ProjectRowMapper;
-
-import java.sql.SQLException;
+import ru.fattakhov.intensive.jdbc.models.Project;
+import ru.fattakhov.intensive.jdbc.mapper.ProjectRowMapper;
 
 @Repository
 public class ProjectDAO {
