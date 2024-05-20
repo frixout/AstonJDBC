@@ -19,7 +19,7 @@ public class ProfileDAO {
         String sql = "INSERT INTO profile (address, phonenumber) VALUES (:address, :phonenumber) RETURNING profileid";
         SqlParameterSource params = new MapSqlParameterSource()
                 .addValue("address", profile.getAddress())
-                .addValue("phonenumebr", profile.getPhoneNumber());
+                .addValue("phonenumber", profile.getPhoneNumber());
         return jdbcTemplate.queryForObject(sql, params, Long.class);
     }
 
@@ -30,7 +30,7 @@ public class ProfileDAO {
     }
 
     public void updateProfile(Profile profile) {
-        String sql = "UPDATE employee SET address = :address, phonenumber = :phonenumber WHERE profileid = :profileid";
+        String sql = "UPDATE profile SET address = :address, phonenumber = :phonenumber WHERE profileid = :profileid";
         SqlParameterSource params = new MapSqlParameterSource()
                 .addValue("profileid", profile.getId())
                 .addValue("address", profile.getAddress())

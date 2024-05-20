@@ -1,7 +1,7 @@
 package ru.fattakhov.intensive.jdbc.mapper;
 
 import org.springframework.jdbc.core.RowMapper;
-import ru.fattakhov.intensive.jdbc.models.Employee;
+import ru.fattakhov.intensive.jdbc.models.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,6 +13,7 @@ public class EmployeeRowMapper implements RowMapper<Employee> {
         employee.setId(rs.getLong("employeeid"));
         employee.setFirstName(rs.getString("firstname"));
         employee.setLastName(rs.getString("lastname"));
+
         return employee;
     }
 }
