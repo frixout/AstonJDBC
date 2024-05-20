@@ -17,7 +17,7 @@ public class EmployeeDAO {
     }
 
     public Long createEmployee(Employee employee) {
-        String sql = "INSERT INTO employee (firstName, lastName) VALUES (:firstname, :lastname) RETURNING employeeid";
+        String sql = "INSERT INTO employee (firstname, lastname) VALUES (:firstname, :lastname) RETURNING employeeid";
         SqlParameterSource params = new MapSqlParameterSource()
                 .addValue("firstname", employee.getFirstName())
                 .addValue("lastname", employee.getLastName());
