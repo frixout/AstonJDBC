@@ -28,16 +28,13 @@ public class EmployeeDAO {
     }
 
     public Employee getEmployeeById(Long employeeid) {
-        String sql = "SELECT employeeid, firstname, lastname, roleid, profileid FROM employee WHERE employeeid = :employeeid";
-                /*"role.rolename," +
-                "role.salary," +
-                "profile.address," +
-                "profile.phonenumber, " +
-                "project.projectname " +*/
-                /*"LEFT JOIN role ON employee.roleid = role.roleid " +
-                "LEFT JOIN profile ON employee.profileid = profile.profileid " +
-                "LEFT JOIN project_employee ON employee.employeeid = project_employee.employeeid " +
-                "LEFT JOIN project ON project_employee.projectid = project.projectid " +*/
+        String sql = "SELECT *" +
+                "FROM employee e " +
+                "LEFT JOIN role r ON e.roleid = r.roleid " +
+                "LEFT JOIN profile p ON e.profileid = p.profileid " +
+                /*"LEFT JOIN project_employee pe ON e.employeeid = pe.employeeid " +
+                "LEFT JOIN project pr ON pe.projectid = pr.projectid " +*/
+                "WHERE e.employeeid = :employeeid";
         SqlParameterSource params = new MapSqlParameterSource("employeeid", employeeid);
         return jdbcTemplate.queryForObject(sql, params, new EmployeeRowMapper());
     }

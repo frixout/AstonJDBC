@@ -37,3 +37,6 @@ CREATE TABLE Project_Employee (
     FOREIGN KEY (ProjectID) REFERENCES Project(ProjectID),
     FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)
 );
+
+INSERT INTO project_employee (ProjectID, EmployeeID) VALUES (1, 1);
+INSERT INTO project_employee (ProjectID, EmployeeID) VALUES (2, 1);
